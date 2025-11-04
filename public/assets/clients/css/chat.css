@@ -1,0 +1,109 @@
+#chat-widget {
+    position: fixed;
+    bottom: 140px;
+    right: 3%;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+/* Nút tròn chat */
+#chat-toggle {
+    background: #28a745;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat box */
+#chat-box {
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#chat-header {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-msg {
+    background: #e2ffc7;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    align-self: flex-start; 
+}
+
+.user-msg {
+    background: #c7eaff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    align-self: flex-end;
+}
+
+.bot-msg,
+.user-msg {
+    word-wrap: break-word; /* Break word when too long */
+    overflow-wrap: break-word; /* Break from new standard */
+    white-space: pre-wrap;    /* Keep line breaks when there is \n */
+}
+
+#chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#chat-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 0;
+}
+
+#chat-input button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#chat-close {
+    color: white;
+    background: none;
+    border: none;
+}
